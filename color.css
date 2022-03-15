@@ -1,31 +1,23 @@
 ::selection {
-  background: darkviolet;
+  background: #707;
   color: gold;
 }
 
 :root {
-  color: #200222;
-  background: skyblue;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: deepskyblue;
-  }
-}
-
-@media (prefers-contrast: less) {
-  :root {
-    color: #33113d;
-  }
+  color: #707;
+  background: gold;
 }
 
 :any-link {
-  color: #50a;
-  text-decoration-style: dotted;
+  color: inherit;
+  text-decoration-color: currentColor;
+  text-shadow: 1vw 1vh 34vh #edb;
 }
 
-mark {
-  color: #11111d;
-  background: magenta;
+:focus {
+  outline-color: currentColor;
+}
+
+.shadow {
+  text-shadow: 1pt 2ex 0 turquoise, 1pt 1ex 0 mediumaquamarine;
 }
